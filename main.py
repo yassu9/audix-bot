@@ -81,35 +81,58 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # ================= HELP =================
 async def help_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "🤖 *How to use Audix*\n\n"
-        "1️⃣ Type the sound you need\n"
-        "2️⃣ Tap ▶️ Preview\n"
-        "3️⃣ Open Source 🔗 to download\n\n"
-        "💡 Tips:\n"
-        "• Keep keywords simple\n"
-        "• Try different words\n"
-        "• Preview before download\n\n"
-        "Audix focuses on quality ✨",
-        parse_mode="Markdown"
-    )
+    "🎧 *Audix Bot – Help*\n\n"
+    "Find high-quality sound effects quickly and easily.\n\n"
+
+    "🚀 *How to use:*\n"
+    "• Type what sound you need\n"
+    "  e.g. `click sound`, `cinematic whoosh`\n\n"
+
+    "▶️ *Preview* – Listen instantly on Telegram\n"
+    "🔗 *Open Source* – Download from original website\n\n"
+
+    "🎯 *Tips:*\n"
+    "• Use simple keywords\n"
+    "• Try different words if needed\n"
+    "• Fewer results, better quality\n\n"
+
+    "📌 *Commands:*\n"
+    "/start – Start the bot\n"
+    "/help – Show this help\n"
+    "/about – About Audix\n\n"
+
+    "🧪 Bot is in testing phase.\n"
+    "Feedback is welcome ❤️\n\n"
+    "Made by ❤️ Yassu"
+)
 
 
 # ================= ABOUT =================
 async def about(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "🎧 *Audix — Sound Finder Bot*\n\n"
-        "Find clean, usable sound effects without wasting time.\n\n"
-        "Useful for:\n"
-        "• Content creators\n"
-        "• Video editors\n"
-        "• Developers\n\n"
-        "📢 Updates & tools:\n"
-        "@yassu_tech_tools\n\n"
-        "🤖 Bot:\n"
-        "@audixsound_bot\n\n"
-        "_Created by Yassu_",
-        )
+    "🎧 *About Audix*\n\n"
+    "Audix is a sound finder bot built for creators who need\n"
+    "**clean, usable, and high-quality sound effects**.\n\n"
 
+    "✨ *What Audix offers:*\n"
+    "• Quick sound search\n"
+    "• Instant preview on Telegram\n"
+    "• Original source links\n\n"
+
+    "👥 Useful for:\n"
+    "• Content creators\n"
+    "• Video editors\n"
+    "• Developers\n"
+    "• Anyone who needs sound effects\n\n"
+
+    "📢 Updates & tools:\n"
+    "@yassu_tech_tools\n\n"
+
+    "🤖 Bot:\n"
+    "@audixsound_bot\n\n"
+
+    "Built with ❤️ by Yassu"
+)
 
 # ================= MESSAGE HANDLER =================
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
