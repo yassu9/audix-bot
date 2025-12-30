@@ -108,8 +108,7 @@ async def about(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "🤖 Bot:\n"
         "@audixsound_bot\n\n"
         "_Created by Yassu_",
-        parse_mode="Markdown"
-    )
+        )
 
 
 # ================= MESSAGE HANDLER =================
